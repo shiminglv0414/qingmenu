@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>轻右键 QingMenu 技术支持</title>
+  <style>
+    :root { color-scheme: light dark; --ink:#162c34; --muted:#42616a; --accent:#136960; --paper:#f7faf7; --rule:#cbdad3; }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink:#eaf3ef; --muted:#afc4be; --accent:#8fd9c8; --paper:#152522; --rule:#3c554d; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.8 "PingFang SC","Hiragino Sans GB",sans-serif; }
+    main { max-width: 48rem; margin: auto; padding: clamp(24px,5vw,72px) clamp(20px,5vw,56px) 4rem; }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; }
+    h1 { margin: 0; font-size: clamp(2rem,6vw,3.5rem); line-height: 1.24; letter-spacing: -.045em; }
+    h2 { font-size: 1.3rem; line-height: 1.45; margin: 0 0 .55rem; }
+    p { margin: .45rem 0; }
+    header p { color: var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:.2rem 1.25rem; margin-top:.9rem; }
+    a { color:var(--accent); text-underline-offset:.2em; }
+    a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+    section { padding:1.6rem 0; border-bottom:1px solid var(--rule); }
+    ol { margin:.4rem 0; padding-left:1.65em; }
+    li + li { margin-top:.45rem; }
+    details { padding:.65rem 0; }
+    details p { margin-left:1.1rem; }
+    summary { cursor:pointer; font-weight:600; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>轻右键 QingMenu 技术支持</h1>
+      <p>适用于轻右键 1.2.0，支持 macOS 14 及以上版本。</p>
+      <nav aria-label="本页目录">
+        <a href="support-en.html" hreflang="en" lang="en">English</a>
+        <a href="#first-use">首次使用</a>
+        <a href="#workflows">日常操作</a>
+        <a href="#troubleshooting">常见问题</a>
+        <a href="#contact">反馈问题</a>
+      </nav>
+    </header>
+<section id="purchases"><h2>试用与购买</h2><p>在「试用与购买」免费领取 30 天完整试用。试用结束不会扣费。若希望继续使用访达操作，可在同一应用内主动选择自动续订的年度订阅，或一次购买永久解锁。领取前和试用期间均可查看当地价格，期满后才能购买。年费可在 Apple 账户中管理或取消，重新安装后可恢复购买。</p></section>
+
+    <section id="first-use">
+      <h2>第一次在访达里新建文档</h2>
+      <ol>
+        <li>打开轻右键，再到访达里打开一个位于系统磁盘的普通文件夹，例如「下载」中的一个子文件夹。</li>
+        <li>在该访达窗口的空白处点右键。看到「轻右键设置…」即可使用。如果菜单尚未出现，从轻右键的「通用设置」打开扩展管理，在系统的访达扩展列表中启用轻右键，再点一次右键。</li>
+        <li>在窗口空白处点右键，选「新建文件 → Word」。如果系统请求授权，面板会打开目标文件夹。确认名称后，直接点「允许访问」。使用默认模板时，空文件夹中会出现「新建Word.docx」。</li>
+      </ol>
+    </section>
+
+    <section id="workflows">
+      <h2>日常操作</h2>
+      <details>
+        <summary>用 WPS 或 Apple 办公软件开始一份新文档</summary>
+        <p>在访达里打开要存放文件的文件夹，在空白处点右键，展开「新建文件」。写文稿可选「WPS 文字」或 Pages，做表格可选「WPS 表格」或 Numbers，做演示可选「WPS 演示」或 Keynote。文档会直接出现在当前文件夹。</p>
+        <p>WPS 文件分别使用 .wps、.et 和 .dps 后缀，Apple 文档分别使用 .pages、.numbers 和 .key 后缀。双击新文件，用支持该格式的应用继续编辑。如果访达询问用哪个应用打开 .dps，右键点该文件，在「打开方式」中选择 WPS Office。可在轻右键的「新建文件」设置中勾选常用格式，并关闭用不到的项目。</p>
+      </details>
+      <details>
+        <summary>把自己的周报加进「新建文件」</summary>
+        <p>先准备一份只保留版式和表头的文档。在轻右键的「新建文件」页选择「添加模板 → 从文件导入…」，选中它。回到项目目录，在空白处点右键，从「新建文件」中选择该模板。生成的副本可以独立编辑。勾选「主菜单」可以把常用模板放到右键菜单第一层。</p>
+        <p>要直接用会议模板，选择「添加模板 → 会议纪要（Word）」。回到访达，选择「新建文件 → 会议纪要」即可创建一份 Word 文档。</p>
+      </details>
+      <details>
+        <summary>用自己选的应用打开文件或项目文件夹</summary>
+        <p>在「常用应用」点「添加应用…」，选择 Mac 上已安装的应用。回到访达，选中文件后点右键，选择「用常用应用打开」及应用名称。要把整个项目交给编辑器，可在项目文件夹的空白处右键，选择「用常用应用打开当前文件夹」。请选用能处理相应文件或文件夹的应用。</p>
+      </details>
+      <details>
+        <summary>复制、移动，还是只打开一个常用目录？</summary>
+        <p>要把文件归档，选中一个或多个文件，右键选「复制文件到」或「移动文件到」，再选目标文件夹。「选择其他文件夹…」适合临时目的地。经常使用的目的地可在「发送文件到」页添加。</p>
+        <p>只想跳转到项目目录时，用「常用目录」。这个命令会在访达中打开目录，原先选中的文件留在原处。</p>
+      </details>
+      <details>
+        <summary>更换文件图标、转换图片、检查校验值</summary>
+        <p>右键选中文件或文件夹，用「更换图标」选择图案，或选「恢复默认图标」。处理图片时，从「工具箱」选「转为 PNG」或「转为 JPEG」，转换后的文件保存在原图旁。检查下载文件时，选中它后执行「计算 SHA-256」，再粘贴结果与发布方给出的摘要比对。</p>
+      </details>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>常见问题</h2>
+      <details>
+        <summary>怎样在访达中查看隐藏的文件？</summary>
+        <p>在访达中按 Shift–Command–句号（.）可以切换隐藏项目的显示。对用轻右键隐藏的普通文件或文件夹，点右键并选「显示所选项目」即可清除隐藏标记。对于 .git 等名称以点号开头的项目，访达还会根据名称将其隐藏，查看它们时使用上述快捷键。</p>
+      </details>
+      <details>
+        <summary>已经打开轻右键，怎样找回设置窗口？</summary>
+        <p>点 Mac 菜单栏中的轻右键图标，选择「轻右键设置…」。如果当前访达窗口已显示扩展菜单，也可右键选择菜单里的「轻右键设置…」。</p>
+      </details>
+      <details>
+        <summary>右键菜单中看不到轻右键的操作</summary>
+        <p>先在本地文件夹的空白处试，再选中一个文件试。空白处可以新建文件，复制和移动则需要先选择文件。在相应设置页查看该命令是否勾选「启用」。</p>
+      </details>
+      <details>
+        <summary>怎样让菜单也显示在移动硬盘或 U 盘上？</summary>
+        <p>在「通用设置」的「使用范围」中选择「系统磁盘 + 外接磁盘」。连接磁盘后打开其中一个文件夹并点右键。如果操作需要授权，请在面板里核对文件夹名称，再点「允许访问」。在磁盘最外层新建文件时，面板显示的是磁盘名称。磁盘本身也需要支持写入。希望只在自己的主目录下看到菜单时，选择「仅个人文件夹」。</p>
+      </details>
+      <details>
+        <summary>为什么本地有菜单，云盘里却找不到？</summary>
+        <p>在云盘里选中一个文件或文件夹，打开屏幕上方的「访达 → 服务 → 显示轻右键操作」，再选择所需命令。想在某个云盘文件夹里新建文档，可以先选中那个文件夹。这个入口也适用于同一目录里的多个文件。</p>
+        <p>如果系统的服务列表中找不到这项，可从轻右键侧栏点「选取项目并操作…」。处理仅在线文件的内容前，请先在访达下载该文件，等下载完成再执行转换、复制或移动。</p>
+      </details>
+      <details>
+        <summary>为什么有时可以保存文字，有时只能粘贴文件？</summary>
+        <p>先从编辑器选中文字并复制，再在访达窗口空白处或一个文件夹上点右键，选「将剪贴板文字存为 TXT」。复制截图后，相同位置会出现「将剪贴板图片存为 PNG」。复制的是访达文件时，在「工具箱」里使用「粘贴到此处」。</p>
+        <p>如果打开菜单后又复制了别的内容，请重新打开右键菜单，让它读取最新的内容类型。</p>
+      </details>
+      <details>
+        <summary>怎样收藏文件夹，又在哪里打开？</summary>
+        <p>在访达窗口空白处选择「收藏当前文件夹」，或右键点一个文件夹，选择「收藏选中的文件夹」。之后可从轻右键的「常用目录」菜单打开它。移除收藏时，在应用的「常用目录」设置中选中条目并点「移除」。</p>
+      </details>
+      <details>
+        <summary>怎样管理文件夹授权？</summary>
+        <p>如果操作需要授权，面板会直接打开目标文件夹。确认显示的路径后点「允许访问」，当前操作会继续，轻右键会记住授权。点「取消」会结束这次操作。如果已切回访达，可以切回轻右键查看等待确认的面板。要清除保存的授权，可在「通用设置」点「清除已记住的文件夹授权…」。</p>
+        <p>关于文件及剪贴板的处理方式，可在轻右键设置窗口的左侧点「隐私政策」。</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>反馈问题</h2>
+      <p>反馈时，请说明 macOS 版本、轻右键版本、右键点击的位置和选择的菜单项。如果出现提示，附上提示原文即可。截图中的个人文件名和路径可以打码。</p>
+      <p>技术支持邮箱 <a href="mailto:shiminglv0414@gmail.com">shiminglv0414@gmail.com</a></p>
+    </section>
+  </main>
+<nav id="language-links"><p><a href="privacy-zh-Hans.html">隐私政策</a></p><p lang="mul"><a href="support-zh-Hant.html" hreflang="zh-Hant">繁體中文</a> · <a href="support-en.html" hreflang="en">English</a> · <a href="support-ja.html" hreflang="ja">日本語</a> · <a href="support-ko.html" hreflang="ko">한국어</a> · <a href="support-fr.html" hreflang="fr">Français</a> · <a href="support-es.html" hreflang="es">Español</a> · <a href="support-pt-BR.html" hreflang="pt-BR">Português (Brasil)</a> · <a href="support-de.html" hreflang="de">Deutsch</a></p></nav></body>
+</html>
