@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>QingMenu Support</title>
+  <style>
+    :root { color-scheme: light dark; --ink:#162c34; --muted:#42616a; --accent:#136960; --paper:#f7faf7; --rule:#cbdad3; }
+    @media (prefers-color-scheme: dark) {
+      :root { --ink:#eaf3ef; --muted:#afc4be; --accent:#8fd9c8; --paper:#152522; --rule:#3c554d; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.8 system-ui,sans-serif; }
+    main { max-width: 48rem; margin: auto; padding: clamp(24px,5vw,72px) clamp(20px,5vw,56px) 4rem; }
+    header { border-bottom: 1px solid var(--rule); padding-bottom: 1.25rem; }
+    h1 { margin: 0; font-size: clamp(2rem,6vw,3.5rem); line-height: 1.24; letter-spacing: -.045em; }
+    h2 { font-size: 1.3rem; line-height: 1.45; margin: 0 0 .55rem; }
+    p { margin: .45rem 0; }
+    header p { color: var(--muted); }
+    nav { display:flex; flex-wrap:wrap; gap:.2rem 1.25rem; margin-top:.9rem; }
+    a { color:var(--accent); text-underline-offset:.2em; }
+    a:focus-visible { outline:2px solid currentColor; outline-offset:4px; }
+    section { padding:1.6rem 0; border-bottom:1px solid var(--rule); }
+    ol { margin:.4rem 0; padding-left:1.65em; }
+    li + li { margin-top:.45rem; }
+    details { padding:.65rem 0; }
+    details p { margin-left:1.1rem; }
+    summary { cursor:pointer; font-weight:600; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>QingMenu Support</h1>
+      <p>For QingMenu 1.2.0 on macOS 14 and later.</p>
+      <nav aria-label="On this page">
+        <a href="support-zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+        <a href="#first-use">Getting started</a>
+        <a href="#workflows">Everyday tasks</a>
+        <a href="#troubleshooting">Common questions</a>
+        <a href="#contact">Contact support</a>
+      </nav>
+    </header>
+<section id="purchases"><h2>Trial and Purchases</h2><p>Start a free 30-day trial in Trial and Purchases. The trial ends without a charge. To keep using Finder actions, choose an auto-renewing annual subscription or buy lifetime access in the same app. You can see local prices before and during the trial. Paid purchases open when the trial ends. Manage or cancel your annual plan in your Apple Account. Restore Purchases is available after reinstalling.</p></section>
+
+    <section id="first-use">
+      <h2>Create your first document in Finder</h2>
+      <ol>
+        <li>Open QingMenu, then open a local folder on the startup disk in Finder, such as a folder inside Downloads.</li>
+        <li>Right-click empty space in the Finder window. If you see <strong>QingMenu Settings…</strong>, the extension is ready. If the item is missing, open the Finder extension controls in QingMenu’s General settings and enable QingMenu in the system list. Right-click in Finder again.</li>
+        <li>Choose <strong>New File → Word</strong>. If macOS asks for access, the panel opens in the target folder. Check the folder name and click <strong>Allow Access</strong>. With the default templates, a new file called <strong>New Word.docx</strong> appears in the empty folder.</li>
+      </ol>
+    </section>
+
+    <section id="workflows">
+      <h2>Everyday tasks</h2>
+      <details>
+        <summary>Start a document for WPS Office, Pages, Numbers, or Keynote</summary>
+        <p>In Finder, open the folder where you want to work. Right-click empty space and choose New File. Choose WPS Writer or Pages for a document, WPS Spreadsheets or Numbers for a spreadsheet, or WPS Presentation or Keynote for slides. The new file appears in that folder.</p>
+        <p>WPS documents use .wps, .et, and .dps. Apple documents use .pages, .numbers, and .key. Double-click the new file to edit it in a compatible app. If Finder asks how to open a .dps file, right-click it and choose Open With → WPS Office. In QingMenu’s New File settings, enable the formats you use and turn off any you want to leave out of the menu.</p>
+      </details>
+      <details>
+        <summary>Use a weekly report as a template</summary>
+        <p>Prepare a document with the layout and headings you want to reuse. In New File settings, choose Add Template → Import from File… and select it. In your project folder, right-click empty space and choose the template from New File. Edit the new copy independently. Use the main menu checkbox to reach your template directly from Finder’s context menu.</p>
+        <p>For a ready-made Word document, choose Add Template → Meeting Notes (Word). In Finder, choose New File → Meeting Notes to create a copy.</p>
+      </details>
+      <details>
+        <summary>Open a file or project folder in a favorite app</summary>
+        <p>In Favorite Apps, click Add Apps… and select an installed application. In Finder, right-click selected files and choose Open with Favorite App, then the app’s name. To send an entire project folder to an editor, right-click empty space inside it and choose Open Current Folder with Favorite App. Choose an app that can open the type of item you selected.</p>
+      </details>
+      <details>
+        <summary>Copy or move files to a project, or just open its folder</summary>
+        <p>Select one or more files, right-click, and choose Copy Files To or Move Files To. Choose a saved destination or select a different folder for this operation. Add frequently used destinations in Send Files To settings.</p>
+        <p>To jump to a project folder, use Favorite Folders. Finder opens the destination and leaves your selected files in place.</p>
+      </details>
+      <details>
+        <summary>Change a file icon, convert an image, or verify a download</summary>
+        <p>Right-click a file or folder and choose a replacement icon, or restore the default icon. For an image, choose PNG or JPEG conversion in Toolbox to create a separate file alongside the original. For a download, calculate its SHA-256 checksum and paste the result to compare it with the publisher’s checksum.</p>
+      </details>
+    </section>
+
+    <section id="troubleshooting">
+      <h2>Common questions</h2>
+      <details>
+        <summary>How do I see hidden files in Finder?</summary>
+        <p>Press Shift–Command–period (.) in Finder to toggle hidden items. To make a file or folder you hid with QingMenu visible again, right-click it and choose Unhide Selected Items. Finder also hides names that start with a period, such as .git. Use the same keyboard shortcut to view those items.</p>
+      </details>
+      <details>
+        <summary>How do I reopen settings?</summary>
+        <p>Click the QingMenu icon in the Mac menu bar and choose <strong>QingMenu Settings…</strong>. When the extension is enabled, the same command is available in the Finder context menu.</p>
+      </details>
+      <details>
+        <summary>How can I tell if the Finder extension is working?</summary>
+        <p>Right-click empty space in a local folder, then right-click a file. Empty space offers commands such as New File. Copy and move commands need a selection. If an individual command is missing, check whether it is enabled in its settings section.</p>
+      </details>
+      <details>
+        <summary>How can I use the menu on a USB drive?</summary>
+        <p>In General, set <strong>Finder Menu Scope</strong> to <strong>Startup Disk + External Disks</strong>. Connect the drive and right-click inside one of its folders. If macOS asks for access, check the folder name in the panel and click <strong>Allow Access</strong>. When creating a file at the top level of the drive, look for the drive name. The drive must support writing for commands that change files. Choose Home Folder Only to limit the menu to your home folder.</p>
+      </details>
+      <details>
+        <summary>Why does the menu appear locally but not in my cloud folder?</summary>
+        <p>Select a file or folder in your cloud drive, then choose Finder → Services → Show QingMenu Actions in the menu bar. Choose a command. To create a document inside a cloud folder, select that folder first. You can also select several files in the same folder.</p>
+        <p>If the service is missing, use the item picker in QingMenu’s sidebar. For an online-only file, download it in Finder and wait for the download to finish before converting, copying, or moving it.</p>
+      </details>
+      <details>
+        <summary>How do I save clipboard text or an image as a file?</summary>
+        <p>Copy some text from an editor. Right-click empty space in a Finder window or right-click a folder and choose <strong>Save Clipboard Text as TXT</strong>. To save a screenshot, press Control-Shift-Command-4, drag across the area to copy, then use <strong>Save Clipboard Image as PNG</strong>.</p>
+        <p>Copying a file in Finder puts a file reference on the clipboard. Use the file paste command in Toolbox for that case. If the clipboard changes while a menu is open, right-click again to see the commands for its new contents.</p>
+      </details>
+      <details>
+        <summary>How do I save or remove a favorite folder?</summary>
+        <p>Right-click empty space in the folder and choose <strong>Add Current Folder to Favorites</strong>. You can also right-click a single folder and choose the option to add that selected folder. Open saved folders from <strong>Favorite Folders</strong>. To remove one, select its row in Favorite Folders in the settings window and click <strong>Remove</strong>.</p>
+      </details>
+      <details>
+        <summary>How do I manage folder permissions?</summary>
+        <p>If an operation needs access, the panel opens in the target folder. Check the path and click <strong>Allow Access</strong> to continue. QingMenu remembers the permission. Click <strong>Cancel</strong> to end the operation. If you switched to Finder, switch back to QingMenu to see the pending panel. To clear saved permissions, open General and click <strong>Forget Folder Permissions…</strong>.</p>
+        <p>Click <strong>Privacy Policy</strong> in the settings sidebar for details about local files and clipboard access.</p>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact support</h2>
+      <p>Please include your macOS version, QingMenu version, where you right-clicked, the command you chose, and the text of any error. You can obscure personal filenames or paths in screenshots.</p>
+      <p>Email <a href="mailto:shiminglv0414@gmail.com">shiminglv0414@gmail.com</a>.</p>
+    </section>
+  </main>
+<nav id="language-links"><p><a href="privacy-en.html">Privacy policy</a></p><p lang="mul"><a href="support-zh-Hans.html" hreflang="zh-Hans">简体中文</a> · <a href="support-zh-Hant.html" hreflang="zh-Hant">繁體中文</a> · <a href="support-ja.html" hreflang="ja">日本語</a> · <a href="support-ko.html" hreflang="ko">한국어</a> · <a href="support-fr.html" hreflang="fr">Français</a> · <a href="support-es.html" hreflang="es">Español</a> · <a href="support-pt-BR.html" hreflang="pt-BR">Português (Brasil)</a> · <a href="support-de.html" hreflang="de">Deutsch</a></p></nav></body>
+</html>
